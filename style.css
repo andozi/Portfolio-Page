@@ -95,8 +95,8 @@ body {
         position: absolute;
         top: -700px;
         right: 0;
-        width: 100vw;
-        height: 75vh;
+        width: 80vw;
+        height: 700px;
         background: #ddd;
         z-index: 2;
         transition: 1s;
@@ -188,18 +188,18 @@ body {
     }
 
     .one {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 400;
     }
 
     .welcome h1 {
         font-weight: 700;
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .two {
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 300;
     }
 }
@@ -216,14 +216,15 @@ body {
 .who {
     position: absolute;
     width: 50%;
-    top: 40%;
+    top: 35%;
     left: 10%;
-    font-size: 18px;
+    font-size: 20px;
+    /* text-align: center; */
 }
 
 .who h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .my-foto {
@@ -241,6 +242,7 @@ body {
     height: 65%;
     width: 65%;
     margin-top: 100px;
+    padding: 150px;
     border: 2px solid #f02114;
     display: block;
     font-size: 20px;
@@ -255,20 +257,21 @@ body {
 }
 
 .more-button.show {
-    background-color: #f02114;
+    background-color: #eee;
     transform: rotate(-180deg);
+    color: #f02114;
 }
 
 .more-button {
     position: absolute;
     bottom: 10%;
     left: 15%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     font-size: 20px;
     font-weight: bold;
-    background-color: #eee;
-    color: black;
+    background-color: #f02114;
+    color: white;
     padding: 5px;
     border: 2px solid black;
     border-radius: 50%;
@@ -278,33 +281,37 @@ body {
 
 @media(max-width: 700px) {
     .my-foto {
-        top: 3%;
+        top: 5%;
         left: 10%;
-        width: 75%;
+        width: 65%;
     }
 
     .about {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .who {
         width: 80%;
-        top: 50%;
+        top: 55%;
         left: 10%;
-        font-size: 25px;
+        font-size: 15px;
+    }
+
+    .who h2 {
+        display: none;
     }
 
     .more {
         position: absolute;
         top: 0;
         left: -100%;
-        height: 82%;
+        height: 75%;
         width: 100%;
         display: block;
         border: none;
         margin-top: 0;
-        padding: 200px 20px;
-        font-size: 25px;
+        padding: 150px 20px;
+        font-size: 16px;
         text-align: center;
         background-color: #eee;
         transition: 1s;
@@ -382,10 +389,11 @@ body {
 
 .layer p {
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
+    padding: 0 40px;
     position: absolute;
     color: #fff;
-    top: 40%;
+    top: 30%;
     left: -100%;
     opacity: 0;
     transition: 0.5s;
@@ -406,6 +414,13 @@ body {
     .row {
         flex-direction: column;
         width: 90%;
+
+    }
+
+    .layer p {
+        top: 30%;
+        padding: 0 30px;
+        font-size: 15px;
     }
 }
 
@@ -474,7 +489,7 @@ body {
     background-color: #000;
     padding: 30px 20px;
     color: white;
-    height: 100vh;
+    height: 90vh;
 }
 
 .wrap {
@@ -528,7 +543,8 @@ body {
 
 @media(max-width: 700px) {
     .contact {
-        height: 110vh;
+        height: 100vh;
+
     }
 
     .wrap {
@@ -536,18 +552,29 @@ body {
         flex-direction: column;
     }
 
+    .contact h1 {
+        font-size: 25px;
+        margin: 35px;
+    }
+
     .contact input,
     .contact textarea {
         width: 100%;
+
     }
 
     .contact button {
-        font-size: 18px;
+        font-size: 15px;
         padding: 5px;
     }
 
     .socials {
         padding-top: 30px;
+    }
+
+    .socials i {
+        font-size: 25px;
+        padding: 10px;
     }
 }
 
