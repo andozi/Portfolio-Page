@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f81866d86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!------------ NAV -------------->
+
+    <section class="nav" id="nav">
+
+        <div class="wrapper" id="wrapper">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#history" class="nav-link">My History</a>
+                </li>
+                <li class="nav-item-home">
+                    <a href="#home" class="nav-link-home">AO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobby" class="nav-link">My Hobbys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </section>
+
+    <!------------ HOME -------------->
+
+    <section class="home" id="home">
+        <div class="welcome">
+            <p class="one">Hi, my Name is</p>
+            <h1>Andrzej Ozimkowski</h1>
+            <p class="two">Welcome to my page!</p>
+
+        </div>
+    </section>
+
+    <!------------ ABOUT ME -------------->
+
+    <section class="about" id="about">
+
+        <div class="who">
+            <h2>Who am I?</h2>
+            <p>Mam 31 lat, szukam pierwszej pracy jako front end developer,
+                nowe wyzwania, coś tam, coś tam...</p>
+        </div>
+
+        <img class="my-foto" src="img/about-me.jpg" alt="">
+
+        <button class="more-button"><i class="fa-solid fa-arrow-right-long"></i></button>
+
+        <div class="more">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Est nihil delectus maiores non
+            corporis quisquam, animi deserunt dolorem molestias
+            rem ipsa aliquam, dignissimos magnam cum
+            voluptatibus sit beatae ad ea!
+            adipisicing elit. Est nihil delectus maiores non
+        </div>
+
+    </section>
+
+    <!------------ MY HISTORY -------------->
+
+    <section class="history" id="history">
+
+        <h1>My History</h1>
+
+        <div class="row">
+            <div class="job">
+                <img src="img/bus.jpg">
+                <div class="layer">
+                    <h3><i class="fa-solid fa-bus"></i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad nam blanditiis eveniet velit
+                        repellat voluptates molestias explicabo expedita eaque ab, vero soluta sint itaque quas quia at
+                        quasi omnis?</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="img/vegetables.jpg" alt="">
+                <div class="layer">
+                    <h3><i class="fa-solid fa-apple-whole"></i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad nam blanditiis eveniet velit
+                        repellat voluptates molestias explicabo expedita eaque ab, vero soluta sint itaque quas quia at
+                        quasi omnis?</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="img/stockroom.jpg" alt="">
+                <div class="layer">
+                    <h3><i class="fa-solid fa-boxes-stacked"></i></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                        elit. Totam ad nam blanditiis eveniet velit repellat<br>
+                        voluptates molestias explicabo expedita eaque ab, <br>
+                        vero soluta sint itaque quas quia at quasi omnis?</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------ Hobby -------------->
+
+    <section class="hobby" id="hobby">
+        <h1>What I like?</h1>
+        <div class="hobby-container">
+            <div class="hobby-item">
+                <p>Travel</p>
+                <img src="img/travel1.k.jpg" alt="">
+
+            </div>
+            <div class="hobby-item">
+                <p>Triathlon</p>
+                <img src="img/triathlon.jpg" alt="">
+
+            </div>
+            <div class="hobby-item">
+                <p>Running</p>
+                <img src="img/running-insta.zw.jpg" alt="">
+
+            </div>
+            <div class="hobby-item">
+                <p>Football</p>
+                <img src="img/ball.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!------------ Contact -------------->
+
+    <section class="contact" id="contact">
+        <h1>Please, contact me!</h1>
+        <div class="wrap">
+            <form class="form" action="">
+                <input type="text" placeholder="your name">
+                <input type="text" placeholder="your mail">
+                <textarea placeholder="your message"></textarea>
+                <button>Send a message</button>
+            </form>
+
+            <div class="socials">
+                <div><i class="fa-solid fa-phone"></i><span>2342423</span></div>
+                <div><i class="fa-solid fa-envelope"></i><span>ozimkowskiandrzej@gmail.com</span></div>
+                <div><i class="fa-brands fa-facebook"></i><span>facebook</span></div>
+                <div><i class="fa-brands fa-github"></i><span>andozi</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p><i class="fa-regular fa-copyright"></i>Andrzej Ozimkowski 2022</p>
+    </section>
+
+</body>
+
+</html>
